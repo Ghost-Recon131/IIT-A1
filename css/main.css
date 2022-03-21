@@ -6,5 +6,10 @@ div {
 
 h2 {
     padding-left: 100px;
+    color: green;
+}
+
+h3 {
+    padding-left: 100px;
     color: greenyellow;
 }
