@@ -1,15 +1,25 @@
 
-/* Add purple / dracula colour background */
-div {
-    background-color: #282a36;
-}
-
+/* Set padding & colour for h1 */
 h2 {
+    padding-top: 20px;
     padding-left: 100px;
     color: green;
 }
 
+/* Set padding & colour for h3 */
 h3 {
     padding-left: 100px;
     color: greenyellow;
 }
+
+p {
+    padding-left: 100px;
+    color: white;
+}
+
+/* Colour to alternate look of website */
+.bg-darkalt {
+    background-color: #2a2f34;
+}
+
+
