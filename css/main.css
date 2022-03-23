@@ -31,6 +31,17 @@ p {
     color: white;
 }
 
+a {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+li {
+    padding-left: 10px;
+    padding-right: 25px;
+    color: white;
+ }
+
 /* Colour to alternate look of website */
 .bg-darkalt {
     background-color: #2a2f34;
