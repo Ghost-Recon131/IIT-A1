@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body>
+<body >
 <!-- Wrap -->
 <div id="wrapper" class="mx-auto" style="width: 1200px;">
 
@@ -69,19 +69,42 @@
             </header>
             <section>
                 <h3>What is your interest in IT? When did your interest in IT start? </h3>
-                <p>My formal education has been through RMIT in the IT field. Having moved around particular areas of IT in the workforce ranging from - Web Design and Development, IT Solutions, Search Engine Optimisation, etc.</p>
+                <p class="text-break">My primary interest in IT in cybersecurity however it wasn't where my interest started. My interest started when the existing
+                    computer at home wasn't powerful enough to run my favourite games roughly back in 2014. I started looking at computer hardware and realised I
+                    know nothing about all the parts. Further research in this area gradually got me interested in custom PC builds. Since then, I've had to deal
+                    with all the IT problems my parents have, and they will get me to setup anything with internet or smart home capabilities. </p>
             </section>
             <section>
                 <h3>Was there a particular event or person that sparked your interest? Outline your IT experience.</h3>
-                <p>University level education ranging from 1st year to Post Grad students through RMIT on campus and online via Open University Australia</p>
+                <p class="text-break">Interest in cybersecurity started due to multiple events over the course of 2017. During that year, many high-profile attacks happened such
+                    as Equifax data breach that leaked details of over 147 million accounts [1]. Uber data breach that exposed personal information of 57 million accounts [2].
+                    As well as new WannaCry ransomware, followed by Petya/ NotPetya and other "strains" of ransomware. These events sparked my interest in Cybersecurity and
+                    highlighted how important this is for the rest of the IT industry. </p>
+                <p class="text-break">I don't have any formal work experience in IT but I have set up a lot of tech equipment at home. I setup the router and mesh nodes for Wi-Fi,
+                    smart home devices, security camera system, a Network attached storage (NAS) and internal network shares over SMB and FTPS. To address the issue of securely
+                    connecting to these devices from an external network, I've then setup an OpenVPN server at home which can be reached via a DDNS service. </p>
             </section>
             <section>
                 <h3>Why did you choose to come to RMIT?</h3>
-                <p>//TODO.</p>
+                <p class="text-break">I came to RMIT for a variety of different reasons. Firstly, when comparing the subjects and going to open days for other Uni's, RMIT appeared
+                    to offer the most practical course for Computer Science, whereas Monash and Melbourne Uni have more theory. I personally prefer a degree that is closer to 'real'
+                    work, and I wanted to start working once I finish undergraduate rather than to continuing with a master’s degree. My high school career advisor also said RMIT
+                    was a good choice for me. </p>
+                <p class="text-break">Secondly, RMIT was in a good location for me; I can take the train or bus and get to RMIT within 30 minutes, so travelling is more
+                    of a break from work than time lost.</p>
+                <p class="text-break">Lastly, most of my friend group from high school also decided to study at RMIT, although they are studying different degrees it
+                    still felt less daunting. It was especially helpful during my first year at RMIT (in 2020), which was pretty much all done online due to COVID
+                    restrictions, and I didn't have many opportunities to meet others in the Computer Science course. </p>
             </section>
             <section>
                 <h3>What do you expect to learn during your studies?</h3>
-                <p>//TODO.</p>
+                <p class="text-break">I expect to learn a few programming languages that is currently popular in the industry now such as C++, Java, React, Python ect. As well
+                    as improving my skills on turning requirements and features into functioning code. </p>
+                <p class="text-break">I also expect to learn about Cloud computing and software development processes mainly Agile / Scrum, as well as some older models like
+                    waterfall. For cloud computing, I expect to learn about hosting applications on the cloud, using AWS or Google as well as DevOps tasks.</p>
+                <p class="text-break">Furthermore, I expect to learn more theory-based content from subjects like Algorithms and Analysis, computing theory to help with
+                    creating more optimised code. Finally, there AI and relevant maths as well as theory behind AI.</p>
+                <p class="text-break"></p>>
             </section>
         </section>
 
@@ -160,23 +183,101 @@
             </section>
             <section>
                 <h3>Description</h3>
-                <p class="text-break">//TODO.</p>
+                <p class="text-break">First, this product needs to reach feature parity with current business cybersecurity solutions. Such as offering malware/ virus scans, firewall,
+                    email and link scanning, and a behaviour analysis module using a combination of a signature-based detection and a generalised AI. This will also be the main line of
+                    defence for an organisation data is collected on all the endpoint devices belonging to the organisation, as well as their servers. Endpoint data will contain usage data,
+                    permissions, usage times, access times, actions taken etc. These can then be used to train the AI on the usage patterns of each employee. The same can be done on the
+                    organisation’s servers and deployed programs, also monitoring how they are used and the usual traffic, throughput, and dataflow. </p>
+
+                <p class="text-break">Training the AI to fit the organisation’s uses is time and resource intensive. To minimise the time needed, “Adaptive Deep Reuse” can be used as
+                    outlined in (M2 Presswire, 2019), which can reduce training time by around 60%, depending on the datasets, without loss in quality. This AI model then works though
+                    detecting anomalies such as sudden change in usage patterns or access times, missed by relying on signature-based detection alone (Stevens, 2020). However, the primary
+                    complication in creating a reliable Anomaly-based detection is getting data that is known to be free from attacks. This step likely requires manual validation of all
+                    the data to ensure the training model does not become ‘poisoned’. </p>
+
+                <p class="text-break">The product will also integrate Specification based detection, which is used to complement the Anomaly-based detection. This detection method uses
+                    “manually developed specifications that characterize legitimate behaviours rather than relying on machine learning algorithms” (Sikos, 2019). But this also increases
+                    complexity to setup but will reduce the number of false positives from the AI model. </p>
+
+                <p class="text-break">Once in operation, the AI would be able to detect attacks using compromised employee accounts, such as sudden increase in data access, or trying to
+                    visit unknown sites or servers. The model should also detect malicious activity from the employee themselves, such as trying to access and copy company intellectual
+                    property. Furthermore, there will be additional protection against human error, such as improper configuration by system admins. When detected, a persistent warning
+                    will be issued until the problem is rectified, likely preventing an Equifax 2017 style data breach. Where “Equifax had crucially failed to renew an encryption certificate
+                    on one of their internal security tools” (Fruhlinger, 2020), thus allowing the attackers to steal data while Equifax system admins had no idea that anything was wrong. </p>
+
+                <p class="text-break">Another crucial feature is offering clients the ability to integrate some protecting into their program via an API. The protection is aimed at detecting
+                    potential breaches due to vulnerabilities due the way it is coded or flaws in the program dependencies. It is not aimed to replaces source code analysis tools like
+                    “FlawFinder, RATS, ITS4” (Source Code Analysis Tools | OWASP Foundation) etc. Security vulnerabilities that arise due to the program’s dependencies is prevalent such as
+                    Apache Struts CVE-2017-5638 which allowed for remote code execution (RCE) on the program’s servers (Syme, 2017). Late last year, Log4j also had a RCE vulnerability.
+                    This month, the author of Node-IPC added malicious code in their package which essentially deletes all files on the server if the IP address of the server is physically in
+                    Russia or Belarus (NVD - CVE-2022-23812). Thus, the features are aimed at detecting, blocking, and doing some basic analysis on these attacks. </p>
+
+                <p class="text-break">The product will also offer network intrusion detection. This feature is aimed at protecting devices on the organisation’s internal network and countering
+                    attackers who have evaded anomaly and specification detection. It is also using behaviour-based detection, but the AI will mainly focus on the user and internet packets to detect
+                    attacks. Malware detecting using electromagnetic waves (Ashley Whittaker, 2022) could also be integrated into the product. </p>
+
+                <p class="text-break">The product needs to have built in logging tools. This feature is responsible for logging all the usage data for all the endpoints and servers. It will collect
+                    data in the background and require no human interaction. The logs are then sent to a separate machine for storage before it is passed to a machine learning model to train the AI.
+                    This feature will also do some data cleaning where necessary to ensure the logs are fully usable. </p>
+
+                <p class="text-break">Finally, a management program is needed for system admins to control the software. This frontend will tie in with all features offered by the product. This will
+                    allow system admins to manage organisation wide deployment of our endpoint software, as well as control the API if needed by their DevOps team. All warnings, notifications and requests
+                    for the admin to act will also be viewed and dealt with in the management program. It will also allow for tinkering with manually defined specifications used for Specification based detection.
+                    Any action taken by the system admin also requires a hardware 2FA token, such as a Google or Yubico Security key. This requirement will prevent an attacker from performing any action on the
+                    admin panel remotely, as the hardware security keys require a physical touch before they authenticate its user (Stina Ehrensvard, 2018). </p>
+
+                <p class="text-break">To try to increase usability of this product for even beginner system admins, the management program will need a windows style design. Where it does not look daunting for
+                    the user and has pre-configured settings for common cases but allow for power user to tinker with any setting they need. </p>
             </section>
             <section>
                 <h3>Tools and Technologies</h3>
-                <p class="text-break">//TODO.</p>
+                <p class="text-break">There are two options for the organisation when it comes to which tools to use. The program
+                    could be deployed on the organisation’s own hardware or servers, entirely on cloud solutions or a mix of both. </p>
+
+                <h5>Onsite solution</h5>
+                <p class="text-break">Hardware recommendation based off (algorithmia, 2018) and (Ben-Zvi, 2022). When all the hardware is onsite, a minimum of one server setup is needed. The server will run off a
+                    data centre style CPU such as AMD’s Epyc line-up, mainly needed for the increased memory channels and PCIe lanes. ECC memory would be optimal, and all the machine learning will be done over multiple
+                    GPUs such as the Nvidia A100. The usage logs will be stored on a separate NAS preferably running off SSD’s only, as log files are a few megabytes maximum, when accessing thousands of these, the random
+                    reads for small files of SSD’s will save the server a lot of time, rather than have it wait for the data. The CPU will handle turning the log files into cleaned datasets for the Machine learning
+                    (ML) model. Preferably there are Uninterrupted power suppls for the NAS and server rack to protect against data loss and corruption during a blackout or brownout. Additional NAS devices offsite to
+                    store backup data will also help in event of data loss. If an organisation wants the AI model to be trained sooner, the can then invest in multiple servers. </p>
+
+                <h5>Cloud solution</h5>
+                <p class="text-break">(Using AWS as primary example so no need to repeat the same competing products from Microsoft, Google etc)</p>
+
+                <p class="text-break">When using cloud computing, things become simpler. A program will be deployed using Elastic Beanstalk, which handles, cleans, and passes the log files as a usable dataset to EC2 G3 instances.
+                    These instances will have the ML model use to train the AI. Data will be stored on using a mix of Elastic Block Storage and S3. Network access to configure and control this process will be configured with VPC,
+                    direct storage and Route 53. (Qiang Fu, 2022).</p>
+
+                <p class="text-break">It is also possible to use a mix of onsite and cloud computing such as offload all computing needs to AWS while keeping all the data for the AI stored locally within the company. </p>
             </section>
             <section>
                 <h3>Skills Required</h3>
-                <p class="text-break">//TODO.</p>
+                <p class="text-break">This project is extremely complex to implement and is likely impossible for a single developer to make a useable product in a short period of time. A team of data scientists,
+                    cybersecurity experts and a team of programmers will be needed. </p>
+
+                <p class="text-break">Programming team needs to be able to create bundle of software that this project discuses which contains the separate AI detection modules for endpoints / servers, API for
+                    developers and software that controls the machine learning process. They will receive input or help directly from cybersecurity experts and data scientists to do this.</p>
+
+                <p class="text-break">The software the runs on endpoints and servers will be written in C++, for its speed and ability to have programmer managed memory. The API could be built in Spring (Java) or Django (Python) as both
+                    are widely used (Cucciniello, 2017). Finally, the software for managing and performing the machine learning process will be built on Python, as it has the largest library of machine learning tools such as sklearn,
+                    TensorFlow etc. UX and font end developers will also be needed to create the front end for end users for managing all the software. </p>
+
+                <p class="text-break">Finding the skills and knowledge is easy as stated by (Nguyen et al., 2019) however it will be a costly process. A large investment must be obtained before the project can proceed.
+                    The hardware required is can also be easily acquired. </p>
             </section>
             <section>
                 <h3>Outcome </h3>
-                <p class="text-break">//TODO.</p>
+                <p class="text-break">Once the project is successful, the chances of successful attack using zero-day vulnerabilities should be significantly reduced or even eliminated at the cost of more false positives. Once the
+                    effectiveness is proven and more organisation uses this software, there will be sizable profits to be made. The original problem of relying on signature and generalised AI models for protection will be replaced
+                    by specialised AI models that use all the data available to help secure an organisation. This should result in far less cases of human error leading to data being compromised and cases of RCE. But hackers will
+                    likely try creating more advanced techniques to breach organisations resulting in a constant “arms race” and continued improvements and updates are needed for the project. </p>
             </section>
+            <h3>References</h3>
+            <p class="text-break">Refer to PDF</p>
         </section>
 
-        <div class="mx-auto py-5" style="width: 400px;">
+        <div class="mx-auto py-2 bg-primary" style="width: 400px;">
             Copyright (c) 2022 IIT A1 Jingxuan Feng - s3843790
         </div>
 

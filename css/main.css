@@ -1,3 +1,7 @@
+/* Default background colour */
+html body {
+    background-color: #191b1c;
+}
 
 /* Set padding & colour for h1 */
 h2 {
@@ -12,6 +16,13 @@ h3 {
     padding-left: 25px;
     padding-right: 25px;
     color: greenyellow;
+}
+
+/* Set padding & colour for h5 */
+h5 {
+    padding-left: 25px;
+    padding-right: 25px;
+    color: lightblue;
 }
 
 p {
