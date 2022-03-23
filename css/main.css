@@ -2,18 +2,21 @@
 /* Set padding & colour for h1 */
 h2 {
     padding-top: 20px;
-    padding-left: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
     color: green;
 }
 
 /* Set padding & colour for h3 */
 h3 {
-    padding-left: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
     color: greenyellow;
 }
 
 p {
-    padding-left: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
     color: white;
 }
 
